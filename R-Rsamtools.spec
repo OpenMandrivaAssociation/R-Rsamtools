@@ -11,19 +11,15 @@ License:          Artistic-2.0 + file LICENSE
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
 Requires:         R-methods R-IRanges R-GenomicRanges R-Biostrings
-Requires:         R-utils R-zlibbioc R-rtracklayer R-bitops
-%if %{with bootstrap}
-Requires:         R-RUnit R-KEGG.db
-%else
-Requires:         R-ShortRead R-GenomicFeatures R-RUnit R-KEGG.db
+Requires:         R-utils R-zlibbioc R-rtracklayer R-bitops R-RUnit R-KEGG.db
+%if %{without bootstrap}
+Requires:         R-ShortRead R-GenomicFeatures
 %endif
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex
 BuildRequires:    R-methods R-IRanges R-GenomicRanges R-Biostrings
-BuildRequires:    R-utils R-zlibbioc R-rtracklayer R-bitops
-%if %{with bootstrap}
-BuildRequires:    R-RUnit R-KEGG.db
-%else
-BuildRequires:    R-ShortRead R-GenomicFeatures R-RUnit R-KEGG.db
+BuildRequires:    R-utils R-zlibbioc R-rtracklayer R-bitops R-RUnit R-KEGG.db
+%if %{without bootstrap}
+BuildRequires:    R-ShortRead R-GenomicFeatures
 %endif
 
 %description
