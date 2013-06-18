@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          1.6.3
-Release:          2
+Release:          3
 Summary:          Binary alignment (BAM), variant call (BCF), or tabix file import
 Group:            Sciences/Mathematics
 License:          Artistic-2.0 + file LICENSE
