@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.10.2
-Release:          2
+Version:          1.12.4
+Release:          1
 Summary:          Binary alignment (BAM), variant call (BCF), or tabix file import
 Group:            Sciences/Mathematics
 License:          Artistic-2.0 + file LICENSE
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/Rsamtools_1.10.2.tar.gz
+Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/Rsamtools_1.12.4.tar.gz
 Requires:         R-methods R-IRanges R-GenomicRanges R-Biostrings
 Requires:         R-utils R-zlibbioc R-rtracklayer R-bitops
 %if %{with bootstrap}
@@ -78,5 +78,6 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 776658
 - Import R-Rsamtools
 - Import R-Rsamtools
+
 
 
