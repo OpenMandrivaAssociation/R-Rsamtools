@@ -8,7 +8,7 @@ Release:          1
 Summary:          Binary alignment (BAM), variant call (BCF), or tabix file import
 Group:            Sciences/Mathematics
 License:          Artistic-2.0 + file LICENSE
-URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
+URL:              https://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/Rsamtools_1.12.4.tar.gz
 Requires:         R-methods R-IRanges R-GenomicRanges R-Biostrings
 Requires:         R-utils R-zlibbioc R-rtracklayer R-bitops
